@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+  <style>
+    .container {
+      width: 300px;
+      padding: 20px;
+      margin: 50px auto;
+      background-color: lightgray;
+      border: 2px solid black;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .red, .green, .yellow {
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      margin: 10px;
+      border-radius: 50%;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="container">
+    <div class="green"></div>
+    <div class="yellow"></div>
+    <div class="red"></div>
+  </div>
 </body>
-
 </html>
